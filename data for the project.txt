@@ -40,3 +40,5 @@ colors:
     
   
   
+database link
+  mongodb+srv://darshana:<password>@cluster0.uoooe.mongodb.net/?retryWrites=true&w=majority
