@@ -1,0 +1,42 @@
+colors:
+  #fea700
+  #042955
+  #061f3e
+  #f0f1f3
+  #ffffff
+  #000000
+  
+  
+ managing
+  admin
+    username
+    password
+  students
+    fname
+    lname
+    age - yrs
+    email
+    gender
+    grade
+  techers
+    fname
+    lname
+    courses 
+    experience
+  courses
+    courses
+    subjects
+    grade
+    duration
+    
+    
+    
+   windows
+    loading
+    login
+    view courses  *
+    view teachers *
+    view students **
+    
+  
+  
