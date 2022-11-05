@@ -12,6 +12,15 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+
+//connect mongodb
+mongoose.connect(
+  "mongodb+srv://Darshana:<password>@nodetest.qakfzgu.mongodb.net/?retryWrites=true&w=majority"
+);
+
+
 app.listen(port, function () {
   console.log("Express is running");
 });
+
+//mongodb+srv://Darshana:<password>@nodetest.qakfzgu.mongodb.net/?retryWrites=true&w=majority
