@@ -27,6 +27,10 @@ const subjectSchema = {
   teacher: String,
 };
 
+//data models
+const Student = mongoose.model("Student", studentSchema);
+const Subject = mongoose.model("Subject", subjectSchema);
+
 app.listen(port, function () {
   console.log("Express is running");
 });
