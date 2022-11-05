@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 
 //connect mongodb
 mongoose.connect(
-  "mongodb+srv://Darshana:<password>@nodetest.qakfzgu.mongodb.net/?retryWrites=true&w=majority"
+  "mongodb+srv://Darshana:<password>@nodetest.qakfzgu.mongodb.net/student?retryWrites=true&w=majority"
 );
 
 
