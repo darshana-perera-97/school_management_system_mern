@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Design from "./Design/Design";
+import DashBoard from "./Design/DashBoard";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
     //   </header>
     // </div>
     <div>
-      <Design />
+      {/* <Design /> */}
+      <DashBoard />
     </div>
   );
 }

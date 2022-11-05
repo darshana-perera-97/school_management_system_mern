@@ -1,9 +1,11 @@
 import React from "react";
-
+import axios from "axios";
+import List from "./List";
 
 export default function Design() {
   const [fname, setFname] = React.useState("");
   const [lname, setLname] = React.useState("");
+
   return (
     <div>
       <input
@@ -25,12 +27,15 @@ export default function Design() {
             fname: fname,
           };
           axios.post("/newst", newStudent);
+          setFname("");
+          setLname("");
           // console.log(newItem);
           // alert("item added");
         }}
       >
         Add
       </button>
+      <List />
     </div>
   );
 }
