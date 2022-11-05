@@ -43,6 +43,30 @@ app.get("/sub", (req, res) => {
     .catch((err) => res.status(400).json("Error: " + err));
 });
 
+// create route
+app.post("/newst", (req, res) => {
+  const newStudent = new Student({
+    fname: req.body.fname,
+    lname: req.body.lname,
+  });
+
+  newStudent
+    .save()
+    .then((student) => console.log(student))
+    .catch((err) => res.status(400).json("Error " + err));
+});
+app.post("/newsub", (req, res) => {
+  const newSubject = new Subject({
+    subName: req.body.subName,
+    teacher: req.body.teacher,
+  });
+
+  newSubject
+    .save()
+    .then((subject) => console.log(subject))
+    .catch((err) => res.status(400).json("Error " + err));
+});
+
 
 
 app.listen(port, function () {
