@@ -24,7 +24,7 @@ export default function Design() {
             fname: fname,
             fname: fname,
           };
-        //   axios.post("/newst", newStudent);
+          axios.post("/newst", newStudent);
           // console.log(newItem);
           // alert("item added");
         }}
