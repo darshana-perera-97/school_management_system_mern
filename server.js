@@ -31,6 +31,20 @@ const subjectSchema = {
 const Student = mongoose.model("Student", studentSchema);
 const Subject = mongoose.model("Subject", subjectSchema);
 
+//read route
+app.get("/st", (req, res) => {
+  Student.find()
+    .then((student) => res.json(student))
+    .catch((err) => res.status(400).json("Error: " + err));
+});
+app.get("/sub", (req, res) => {
+  Subject.find()
+    .then((subject) => res.json(subject))
+    .catch((err) => res.status(400).json("Error: " + err));
+});
+
+
+
 app.listen(port, function () {
   console.log("Express is running");
 });
