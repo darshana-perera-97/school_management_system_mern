@@ -8,7 +8,7 @@ import Teachers from "./Pages/Teachers";
 
 export default function Body() {
   return (
-    <div>
+    <div style={{padding:"30px"}}>
       <Routes>
         <Route path="/" element={<DashBoard />} />
         <Route path="/students" element={<Students />} />
