@@ -16,7 +16,7 @@ export default function DashBoard() {
       >
         Student Management System
       </p>
-      <div style={{ display: "flex", padding: "10px", width: "100%" }}>
+      <div style={{ display: "flex", width: "100%" }}>
         <NavBar style={{ width: "15%" }} />
         <Body style={{ width: "85%" }} />
       </div>
