@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function NavBar() {
   return (
     <div
-      style={{ background: "#B1B1B1", padding: "35px 40px", height: "89.3vh" }}
+      style={{ background: "#B1B1B1", padding: "35px 40px", minHeight:"83vh" }}
     >
       <img src="https://nivt.in/sms/assets/img/sms-logo.png" width="120px" />
       <br />
