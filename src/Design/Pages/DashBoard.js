@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function DashBoard() {
   return (
@@ -9,7 +10,7 @@ export default function DashBoard() {
           border: "6px solid teal",
           width: "78vw",
           borderRadius: "30px",
-          display:'flex'
+          display: "flex",
         }}
       >
         <div>
@@ -33,7 +34,101 @@ export default function DashBoard() {
             with all functionalities.
           </p>
         </div>
-        <img src="https://static.wixstatic.com/media/af11f4_ec919305214645099b8697ca6b3a31a1~mv2.png/v1/fill/w_560,h_326,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/af11f4_ec919305214645099b8697ca6b3a31a1~mv2.png" height="280px"/>
+        <img
+          src="https://static.wixstatic.com/media/af11f4_ec919305214645099b8697ca6b3a31a1~mv2.png/v1/fill/w_560,h_326,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/af11f4_ec919305214645099b8697ca6b3a31a1~mv2.png"
+          height="280px"
+        />
+      </div>
+      <hr
+        style={{
+          marginTop: "40px",
+          height: "2px",
+          background: "teal",
+          opacity: "0.6",
+        }}
+      />
+      <p style={{ fontSize: "30px", color: "teal",margin:"30px 10px" }}>Shortcuts</p>
+      <div>
+        <button
+          style={{
+            background: "teal",
+            padding: "10px 20px",
+            width: "20%",
+            margin: "0% 2.5%",
+          }}
+        >
+          <Link
+            to="/teachers"
+            style={{
+              textDecoration: "none",
+              fontSize: "18px",
+              color: "white",
+              fontWeight: "600",
+            }}
+          >
+            View Teachers
+          </Link>
+        </button>
+        <button
+          style={{
+            background: "teal",
+            padding: "10px 20px",
+            width: "20%",
+            margin: "0% 2.5%",
+          }}
+        >
+          <Link
+            to="/subjects"
+            style={{
+              textDecoration: "none",
+              fontSize: "18px",
+              color: "white",
+              fontWeight: "600",
+            }}
+          >
+            View Subjects
+          </Link>
+        </button>
+        <button
+          style={{
+            background: "teal",
+            padding: "10px 20px",
+            width: "20%",
+            margin: "0% 2.5%",
+          }}
+        >
+          <Link
+            to="/students"
+            style={{
+              textDecoration: "none",
+              fontSize: "18px",
+              color: "white",
+              fontWeight: "600",
+            }}
+          >
+            View Students
+          </Link>
+        </button>
+        <button
+          style={{
+            background: "teal",
+            padding: "10px 20px",
+            width: "20%",
+            margin: "0% 2.5%",
+          }}
+        >
+          <Link
+            to="/login"
+            style={{
+              textDecoration: "none",
+              fontSize: "18px",
+              color: "white",
+              fontWeight: "600",
+            }}
+          >
+            System Login
+          </Link>
+        </button>
       </div>
     </div>
   );
