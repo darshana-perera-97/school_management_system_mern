@@ -24,7 +24,7 @@ export default function DashBoard() {
               fontSize: "18px",
               color: "teal",
               opacity: "0.5",
-              width: "45%",
+              width: "60 %",
               padding: "40px 0px",
             }}
           >
